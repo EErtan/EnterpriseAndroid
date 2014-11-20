@@ -8,11 +8,32 @@ import android.view.MenuItem;
 
 public class ActivityMain extends Activity {
 
+  /* Parts in content provider framework:
+  * Four key parts of Content provider: the contract, crud methods and database management, content observers, registration/permission
+  *
+  * Contract - source file that publishes symbols and costants that external processes need to access the provider,
+  * incuded with the external source.
+  *
+  * Content resolver - android lib part using system level services to identify the signle content provider currently
+  * registered as the manager of the dataset correstponding to a given URI, typically optained from the contract
+  *
+  * Content provider - what the content resolver forwards requests to, managing the dataset, and suplying clients with
+  * a consistent view of the data and managing their access to it
+  *
+  * Content Observer - api supporting a URI based notifaction system which makes it possible for clients to discover
+  * changes within the dataset
+  *
+  *
+  * */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+  // uris as names for virtual datasets with canonical scheme content://
+  // scheme-authority-path-id
 
 
     @Override

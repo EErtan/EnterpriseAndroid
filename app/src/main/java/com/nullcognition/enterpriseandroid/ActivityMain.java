@@ -24,6 +24,16 @@ public class ActivityMain extends Activity {
   * changes within the dataset
   *
   *
+  * Three architectural approaches are
+  * Service-centric with IntentService
+  * ContentProvider-Centric with ContentProvider
+  * SyncAdapter-Centric with androids sync adapter framework
+  *
+  *
+  * Scalable, metadata describes what can be cached and for how long
+  *
+  * payload, is structured application data in xml or json and the content-type of application/json
+  * or if other mime type will identify it accordingly audio/mp3
   * */
 
     @Override
@@ -33,8 +43,7 @@ public class ActivityMain extends Activity {
     }
 
   // uris as names for virtual datasets with canonical scheme content://
-  // scheme-authority-path-id
-
+  // scheme(http or https:// )-authority(dns name of origin server and or port number of accepting connections)-path-id/query(?,&,=)
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

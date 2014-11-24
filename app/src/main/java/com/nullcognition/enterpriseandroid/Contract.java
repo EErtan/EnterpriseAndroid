@@ -3,8 +3,8 @@ package com.nullcognition.enterpriseandroid;
  * Created by ersin on 22/11/14 at 11:57 PM
  */
 public class Contract {}
-
-/**
+// marshalling creatin the transeferable representation form a resource to fit the json schema
+/*
  * Example contract json to be handeled by gson
  * {
  "title": "RESTfulContacts",

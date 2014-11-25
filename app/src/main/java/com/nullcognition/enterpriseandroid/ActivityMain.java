@@ -15,7 +15,7 @@ public class ActivityMain extends Activity {
   * incuded with the external source.
   *
   * Content resolver - android lib part using system level services to identify the signle content provider currently
-  * registered as the manager of the dataset correstponding to a given URI, typically optained from the contract
+  * registered as qthe manager of the dataset correstponding to a given URI, typically optained from the contract
   *
   * Content provider - what the content resolver forwards requests to, managing the dataset, and suplying clients with
   * a consistent view of the data and managing their access to it
@@ -67,6 +67,8 @@ public class ActivityMain extends Activity {
 	  return super.onOptionsItemSelected(item);
    }
 
+}
+
 //   private int standardJavaDotNet(HttpMethod method, android.net.Uri uri, String payload, org.apache.http.client.ResponseHandler hdlr) throws java.io.IOException{
 //	  {
 //		 java.net.HttpURLConnection conn = (java.net.HttpURLConnection)new java.net.URL(uri.toString()).openConnection();
@@ -104,6 +106,3 @@ public class ActivityMain extends Activity {
 //		 return code;
 //	  }
 //   }
-
-
-}

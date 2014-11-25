@@ -67,6 +67,7 @@ public class ActivityMain extends Activity {
 	  return super.onOptionsItemSelected(item);
    }
 
+   //
 }
 
 //   private int standardJavaDotNet(HttpMethod method, android.net.Uri uri, String payload, org.apache.http.client.ResponseHandler hdlr) throws java.io.IOException{
